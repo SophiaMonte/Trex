@@ -86,16 +86,18 @@ function draw(){
   if (estadoJogo === "start"){
     //movimento
     ground.velocityX = -(5 + placar/100);
-    if (ground.x < 0){
-     ground.x = ground.width/2
-    }
 
+    
     //pular quando tecla de espaço for pressionada
     if(touches.lenght>0 || keyDown("space")&& trex.y >= 120){
       trex.velocityY = -10;
       jump.play();
       touches = [];
-    }
+    } 
+
+    if (ground.x < 0){
+     ground.x = ground.width/2
+    } 
     //placar
     //placar = placar + Math.round(frameCount/120);
 
