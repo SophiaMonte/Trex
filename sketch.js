@@ -28,7 +28,7 @@ function preload(){
 }
 
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, 200);
   // ground1
   ground1 = createSprite(200, height-5, width-5, 5);
   ground1.visible = false;
