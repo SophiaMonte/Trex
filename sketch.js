@@ -33,7 +33,7 @@ function setup(){
   ground1 = createSprite(200, height-5, width-5, 5);
   ground1.visible = false;
   //criando o trex
-  trex = createSprite(50,160,20,50);
+  trex = createSprite(width/20, height-100, 20, 50);
   trex.addAnimation("running", trex_running);
   trex.addImage("morreu", trex_morreu);
 
